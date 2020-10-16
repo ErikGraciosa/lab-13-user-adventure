@@ -24,15 +24,22 @@
                 <fieldset>
                     <legend>Enter name, pick bike</legend>
                     Name<br>
-                    <input id="name"><br><br>
+                    <input id="name" required><br><br>
                     
-                    
-                    <input type="radio" name="bike-type" checked/>Mountain Bike<br>
-                    <input type="radio" name="bike-type"/>Road Bike<br>
-                    <input type="radio" name="bike-type"/>Commuter Bike<br>
-                    <input type="radio" name="bike-type"/>BMX Bike<br>
+                    <label>
+                        <input type="radio" name="bike-type" required value="mountain"/>Mountain Bike<br>
+                    </label>
+                    <label></label>
+                        <input type="radio" name="bike-type" required value="road"/>Road Bike<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="bike-type" required value="commuter"/>Commuter Bike<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="bike-type" required value="bmx"/>BMX Bike<br>
+                    </label>
                 </fieldset>            
-                <button>Start riding</button>
+                <button id="button">Start riding</button>
             </form> 
         </section>
     </main>

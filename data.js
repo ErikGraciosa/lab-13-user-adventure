@@ -1,7 +1,7 @@
 export default [
     {
-        id: 'monsters',
-        title: 'A Den of Monsters',
+        id: 'food-delivery',
+        title: 'Food Delivery',
         mapposition: {
             top: '89%',
             left: '44%'
@@ -12,7 +12,7 @@ export default [
     `,
         choices: [{
             id: 'negotiate',
-            description: 'Negotiate with them',
+            description: 'Plot',
             result: `
             Plot narrative here
         `,
@@ -20,7 +20,7 @@ export default [
             tips: 35
         }, {
             id: 'fight',
-            description: 'Fiiiiiggghhhttt!',
+            description: 'Plot',
             result: `
             Plot narrative here
         `,
@@ -28,7 +28,7 @@ export default [
             tips: 50
         }, {
             id: 'run',
-            description: 'Run away like good Sir Robin',
+            description: 'Plot',
             result: `
             Plot narrative here
         `,
@@ -37,8 +37,8 @@ export default [
         }]
     },
     {
-        id: 'dragon',
-        title: 'A Scary Dragon',
+        id: 'legal-documents',
+        title: 'Legal Documents',
         mapposition: {
             top: '17%',
             left: '37%'
@@ -49,7 +49,7 @@ export default [
     `,
         choices: [{
             id: 'run',
-            description: 'Get the hell out of the village',
+            description: 'Plot',
             result: `
             Plot narrative here
         `,
@@ -57,7 +57,7 @@ export default [
             tips: 35
         }, {
             id: 'fight',
-            description: 'Fiiiiiggghhhttt!',
+            description: 'Plot',
             result: `
             Plot narrative here
         `,
@@ -65,7 +65,7 @@ export default [
             tips: 0
         }, {
             id: 'archer',
-            description: 'Emulate that guy from LOR who shot an arrow',
+            description: 'Plot',
             result: `
             Plot narrative here
         `,
@@ -74,8 +74,8 @@ export default [
         }]
     },
     {
-        id: 'treasure',
-        title: 'A tipsen Treasure',
+        id: 'alleycat',
+        title: 'Alleycat Race!',
         mapposition: {
             top: '31%',
             left: '5%'
@@ -87,19 +87,19 @@ export default [
         choices: [{
             id: 'wooden',
             description: 'A Wooden Chest',
-            result: 'You grab 40 tips pieces!',
+            result: 'Plot',
             fatigue: 0,
             tips: 40
         }, {
             id: 'tipsen',
             description: 'A tipsen Chest',
-            result: 'Oh no! The chest is booby trapped with poison and you take 50 fatigue damage',
+            result: 'Plot',
             fatigue: -50,
             tips: 0
         }, {
             id: 'jeweled',
             description: 'A Jeweled Chest',
-            result: 'A warm light engulfs you and you gain 35 fatigue',
+            result: 'Plot',
             fatigue: 35,
             tips: 0
         }]
