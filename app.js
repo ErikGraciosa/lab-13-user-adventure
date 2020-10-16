@@ -1,4 +1,4 @@
-import { getFromLocalStorage, setInLocalStorage } from './app-utils.js';
+import { setInLocalStorage } from './app-utils.js';
 import data from './data.js';
 
 
