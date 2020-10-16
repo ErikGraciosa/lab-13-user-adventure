@@ -37,11 +37,6 @@ section {
     border: solid 2px var(--color1);
 }
 
-fieldset {
-    border: solid black 1px;
-    padding: 5px;
-}
-
 header {
     display: flex;
     justify-content: flex-end;
