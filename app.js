@@ -1,9 +1,10 @@
 import { getFromLocalStorage, setInLocalStorage } from './app-utils.js';
+import data from './data.js';
 
 
 // import functions and grab DOM elements
-const name = document.getElementById('name');
-const bikeType = document.querySelectorAll(':checked');
+
+
 const form = document.getElementById('form');
 
 
@@ -13,8 +14,25 @@ const form = document.getElementById('form');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log('test');
+
+    const formData = new FormData(form);
+
+
+    //Build user state object
+    const userObject = {
+        name: formData.get('name'),
+        bike: formData.get('bike-type'),
+        fatigue: 50,
+        tips: 0,
+        completed: {}
+    };
+
+
+    setInLocalStorage('userData', userObject);
+
+
+
+
     window.location = './questpage';
 });
 
-setInLocalStorage('this', 'this');
